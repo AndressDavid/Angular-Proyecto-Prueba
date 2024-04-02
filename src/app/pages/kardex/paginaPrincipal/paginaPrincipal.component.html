@@ -1,0 +1,9 @@
+<app-titulo
+  class="d-flex justify-content-center my-3 fst-italic"
+  [titulo]="'Prueba'"
+/>
+<app-procedimientos
+  (OutListadoProcedimientos)="onGetListProcedimiento($event)"
+  class="my-3"
+/>
+<app-tabla-procedimiento [listaProcedimientos]="listaProcedimientos" />
